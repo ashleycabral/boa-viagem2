@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2? family= Share+Tech & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Six+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Poiret+One&family=Six+Caps&display=swap');
+/*========================geral==========================*/
+
+
+:root {
+    --gray-color: #0D0D0D;
+    --dark-color: #000000;
+    --light-color:  #FFFFFF;
+    --back-color: #F7F8F9;
+    --blue-color: #9acff0;
+    --orange-light-color:#071d3adc;
+    --dark-blue: #1e2b32;
+  }
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    text-decoration: none;
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    background-color: var(--light-color);
+}
+
+
+.button{
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: var(--blue-color);
+  color: var(--light-color);
+  padding: 11px 18px;
+  border: none;
+  transition: .2s;
+  border-radius: 20px;
+  
+}
+.button:hover{
+  border: 1px solid var(--light-color);
+  background-color: transparent;
+}
+
+.btn2-inicio{
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: var(--light-color);
+  padding: 11px 50px;
+  border: 1px solid var(--light-color);
+  border-radius: 20px;
+  
+}
+.btn2-inicio:hover{
+  background-color: var(--blue-color);
+  color: var(--light-color);
+  border: none;
+  transition: .3s;
+}
+
+
+/*=======================cabeçalho=======================*/
+
+header {
+ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    position: fixed;
+    top: 0;
+    padding: 0 100px;
+    width: 100%;
+    background-color: var(--gray-color);
+    z-index: 1;  
+}
+
+header.ativo{
+  
+    top: 0;
+    transition: .5s;
+}
+
+header .logo {
+  padding-top: 6px;
+  width: 150px;
+}
+
+#menu-web {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    gap: 60px; 
+}
+
+#menu-web a { 
+  text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--light-color);
+ 
+}
+
+#menu-web a:hover{
+    color: var(--blue-color);
+    transition: .3s;
+}
+
+#menu-web .btn-contact{
+  border: 2px solid;
+  border-radius: 15px;
+  padding: 5px 15px;
+  border-color: var(--blue-color);
+}
+
+#botao-mobile{
+    display: none;
+}
+
+/*=======================banner=======================*/
+
+
+#banner_plano_section{
+    height: 60vh;
+    margin-top: 60px;
+    background-image: url(/img/banner-plano.png);
+    background-repeat: no-repeat;
+}
+
+/*=======================main container=======================*/
+#main_container_section{
+    height: 90vh;
+    padding: 20px;
+    background-color: var(--back-color);
+}
+
+
+/*line*/
+
+.line {
+    width: 170px;
+    height: 3px;
+    background: var(--blue-color);
+    display: flex;
+    margin: 0 auto 15px auto;
+    
+}
+
+.text-main-container{
+    padding: 60px 80px;
+    text-align: center;
+    
+
+}
+
+.text-main-container p{
+    padding: 20px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
+
+/*===================== seção cobertura ===================*/
+#cobertura_section{
+    height: 70vh;
+    margin-top: 60px;
+    padding: 20px;
+  }
+  
+  .txt-cobertura {
+    color: var(--dark-color);
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /*div dos container cobertura*/
+  #cobertura_container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  padding:20px;
+  }
+
+  .card-cobertura {
+    background-color: var(--light-color);
+    width: 420px;
+    height: 350px;
+    margin: 10px;
+    border-radius: 10px;
+    border-top: 2px solid  rgba(161, 199, 243, 0.856);
+    border-left: 2px solid  rgb(161, 192, 226);
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.363);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .img-card-cobertura{
+    width: 20%;
+  }
+
+  .text-card h1{
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+
+  .text-card p{
+    font-weight: 500;
+    padding: 0 10px;
+  }
+  .card-cobertura{
+     padding: 10px;
+     gap: 10px;
+  }
+
+  
+.btn-card-solucao{
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(127, 185, 250);
+    color: var(--light-color);
+    padding: 9px 15px;
+    border: none;
+    transition: .2s;
+    border-radius: 20px;
+    
+    }
+    .btn-card-solucao:hover{
+    background-color: rgb(25, 61, 126);
+    
+    }
+
+/*===================== section planos back===================*/
+
+
+    #planos_back_section{
+        margin-top: 30px;
+        height: 50vh;
+        background-image:linear-gradient(rgba(0, 0, 0, 0.795), rgba(0, 0, 0, 0.678)), url(/img/formacao-familia-back.jpg);
+        background-size: cover;
+        position: relative;
+        background-size: cover;
+        background-position: center;
+
+    }
+
+
+    .text-plano-back{
+        color: var(--light-color);
+        padding: 70px 100px;
+     }
+
+    .text-plano-back h1{
+        font-size: 40px;
+        padding: 20px 0;
+    }
+
+    
+    .text-plano-back p{
+        font-size: 25px;
+        padding: 20px 0;
+    }
+   
+
+
+        /*===================== section custo back===================*/
+
+        #custo_back_section{
+            height: 30vh;
+            background-color: var(--dark-blue);
+            color: var(--light-color);
+            padding: 40px 20px;
+        }
+        
+        .text-custo{
+            padding: 20px 50px;
+        }
+    
+
+        .text-custo h2{
+            font-size: 25px;
+            padding-right: 200px;
+        }
+
+        .text-custo p{
+            font-size: 20px;
+            padding-top: 10px;
+        }
+
+    
+/*===================== seção info ===================*/
+#info_section{
+    padding: 60px 90px;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+  
+  #info_section h1{
+    font-size: 20px;
+    padding: 10px 70px;
+    text-align: center;
+  }
+  .text-info-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .logo-info {
+    width: 400px;
+   
+  }
+  
+
+  .btn-telefone {
+    background-color: var(--blue-color);
+    border: none;
+    border-radius: 20px;
+    color: var(--light-color);
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 12px 20px;
+    }
+
+.btn-icon-telefone-section {
+width: 30px;
+padding-right: 10px;
+}
+
+  /*===================== mapa seção ===================*/
+  
+  #mapa_section{
+    height: 70vh;
+    margin-top: 40px;
+   
+    
+  }
+  .links-mapa  {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding: 20px;
+    justify-content: center;
+  }
+  
+  .links-mapa a {
+    text-align: center;
+    font-size: 20px;
+    color: var(--dark-color);
+    text-decoration: none;
+  
+  }
+  
+  
+  .links-mapa i {
+    text-align: center;
+    font-size: 20px;
+    color: var(--dark-blue);
+  
+  }
+  
+  
+  .icon-mapa{
+    width: 25px;
+    
+  }
+  
+  .map-box{
+    padding-top: 30px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .map-box iframe{
+    width: 100%;
+    height: 80%;
+  
+  
+  }
+  
+  
+  /*===================== footer ===================*/
+  
+  footer{
+      background-color: var(--gray-color);
+      color: var(--light-color);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      height: 80px;
+  }
+  

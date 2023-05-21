@@ -60,10 +60,10 @@ sr.reveal('.text-inicio', {
 
 //animacao-slide
 
-var radio = document.querySelector('.manual-btn')
+var radio = document.querySelector('.bar')
 var cont = 1
 
-document.getElementById('radio1').checked = true
+document.getElementById('slide1').checked = true
 
 setInterval(() => {
     proximaImg()
@@ -76,7 +76,7 @@ function proximaImg() {
         cont = 1
     }
 
-    document.getElementById('radio' +cont).checked = true
+    document.getElementById('slide'+cont).checked = true
 
 }
 

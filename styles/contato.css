@@ -70,6 +70,7 @@ body {
 /*=======================cabeçalho=======================*/
 
 header {
+ 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -83,7 +84,7 @@ header {
 }
 
 header.ativo{
-    background-color:  rgba(0, 0, 0, 0.651);
+  
     top: 0;
     transition: .5s;
 }
@@ -100,7 +101,8 @@ header .logo {
     gap: 60px; 
 }
 
-#menu-web a {
+#menu-web a { 
+  text-decoration: none;
     font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;
@@ -125,154 +127,151 @@ header .logo {
 }
 
 
+/*=======================CTT SECTION =======================*/
 
-.carousel-inner{
-  margin-top: 60px;
+#ctt_section{
+height: 50vh;
+background-image: linear-gradient(rgba(0, 0, 0, 0.795), rgba(0, 0, 0, 0.678)), url("/img/atendimento-digital.jpg");
+background-size: cover;
+}
+
+.text-ctt{
+    
+    padding: 8% 50px;
+    text-align: center;
+}
+
+.text-ctt h1{
+    font-size: 40px;
+    color: var(--light-color);
+    text-transform: uppercase;
+    padding-bottom: 15px;
+   }
+   
+   .text-ctt p{
+    font-size: 20px;
+    padding: 0 20%;
+    color: var(--back-color);
+    padding-bottom: 40px;
+   }
+
+
+   .btn-telefone {
+    background-color: rgb(124, 193, 240);
+    border: none;
+    border-radius: 20px;
+    color: var(--light-color);
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 12px 20px;
+    }
+
+.btn-icon-telefone-section {
+width: 30px;
+padding-right: 10px;
 }
 
 
-/*=========================seção soluçao======================*/
-/*line*/
 
-.line {
-  width: 170px;
-  height: 3px;
-  background: var(--blue-color);
-  display: flex;
-  margin:20px auto 0 auto;
+
+
+/*===================== seção info ===================*/
+
+
+
+  .txt-cobertura {
+    color: var(--dark-color);
+    font-size: 20px;
+    text-align: center;
+    padding: 50px 10px 0;
+  }
   
-}
-
-#solucao_section {
-  background-color: var(--back-color);
-  text-align: center;
-  padding-top: 50px;
-
-}
-
-.card-solucao   h3{
-font-size: 25px;
-padding: 1rem;
-color: var(--dark-color);
-}
-
-.card-solucao   h3:hover{
-color: var(--blue-color);
-}
-
-.card-solucao  p {
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 18px;
-  width: 83%;
-  text-align: justify;
-  margin-bottom: 20px;
-  color: #5D5F64;
-  font-weight: 400;
-}
-
-
-
-
-#text-solucao{
- display: flex;
- flex-direction: column;
- align-items: center;
- padding: 1rem 13rem;
- text-align: center;
-}
-
-#text-solucao h2{
-font-weight: 700;
-font-size: 35px;
-
-}
-
-#text-solucao p {
-color: #5D5F64;
-font-weight: 400;
-font-size: 20px;
-padding-top: 20px;
-}
-
-/* div dos container*/
-#solucao_container{
-display: grid;
-grid-gap: 30px;
-justify-content: center;
-justify-items: center;
-grid-template-columns: repeat(2, 600px);
-padding:30px;
-}
-
-
-.card-solucao {
-  background-color: var(--light-color);
-  width: 580px;
-  height: 300px;
-  margin: 15px;
-  border-radius: 10px;
-  border-top: 2px solid  rgb(233, 233, 233);
-  border-left: 2px solid  rgb(233, 233, 233);
-  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.171);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+#info_section{
+    padding: 60px 90px;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
   
-}
-.text-card-solucao{
-text-align: center;
-padding: 20px 0;
-}
-
-.card-solucao h3 {
-padding: 20px;
-text-align: center;
-}
-
-.card-solucao p {
-padding-left: 25px;
-text-align: center;
-}
-
-
-.img-card-solucao1{
-width: 920px;
-border-radius: 10px 0 0 10px;
-}
-
-.img-card-solucao2{
-width:800px;
-border-radius: 10px 0 0 10px;
-}
-
-.img-card-solucao3{
-width: 990px;
-border-radius: 10px 0 0 10px;
-}
-
-.img-card-solucao4{
-width: 990px;
-border-radius: 10px 0 0 10px;
-}
-
-
-
-
-.btn-card-solucao{
-font-size: 13px;
-text-transform: uppercase;
-font-weight: 600;
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-background-color: var(--blue-color);
-color: var(--light-color);
-padding: 9px 15px;
-border: none;
-transition: .2s;
-border-radius: 20px;
-
-}
-.btn-card-solucao:hover{
-background-color: (--orange-light-color);
-
-}
-
+  #info_section h1{
+    font-size: 20px;
+    padding: 10px 70px;
+    text-align: center;
+  }
+  .text-info-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .logo-info {
+    width: 400px;
+   
+  }
+  
+  /*===================== mapa seção ===================*/
+  
+  #mapa_section{
+   
+    height: 70vh;
+    
+  }
+  .links-mapa  {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding: 20px;
+    justify-content: center;
+  }
+  
+  .links-mapa a {
+    text-align: center;
+    font-size: 20px;
+    color: var(--dark-color);
+  
+  }
+  
+  
+  .links-mapa i {
+    text-align: center;
+    font-size: 20px;
+    color: var(--dark-blue);
+  
+  }
+  
+  
+  .icon-mapa{
+    width: 25px;
+    
+  }
+  
+  .map-box{
+    padding-top: 30px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .map-box iframe{
+    width: 100%;
+    height: 80%;
+  
+  
+  }
+  
+  
+  /*===================== footer ===================*/
+  
+  footer{
+      background-color: var(--gray-color);
+      color: var(--light-color);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      height: 80px;
+  }
