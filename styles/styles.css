@@ -11,7 +11,7 @@
     --dark-color: #000000;
     --light-color:  #FFFFFF;
     --back-color: #F7F8F9;
-    --blue-color: #9acff0;
+    --blue-color: #87c6ec;
     --orange-light-color:#071d3adc;
     --dark-blue: #1e2b32;
   }
@@ -133,7 +133,7 @@ header .logo {
     background-image: linear-gradient(rgba(0, 0, 0, 0.795), rgba(0, 0, 0, 0.678)), url("/img/fundo-back-boaviagem.jpg");
     background-size: cover;
     background-attachment: fixed;
-    padding-top: 330px;
+    padding-top: 280px;
 }
 
 
@@ -197,7 +197,7 @@ header .logo {
     width: 0;
   }
   to{
-   width: 10em;
+   width: 20em;
   }
 }
 /*=========================seção soluçao======================*/
@@ -446,7 +446,7 @@ padding-right: 10px;
 
 /*===================== seção cobertura ===================*/
 #cobertura_section{
-  height: 70vh;
+  height: 80vh;
   padding: 20px;
 }
 
@@ -493,7 +493,7 @@ padding:10px;
 /*===================== seção info ===================*/
 #info_section{
   padding: 60px 90px;
-  height: 40vh;
+  height: 50vh;
   display: flex;
   flex-direction: row;
   gap: 50px;
@@ -520,9 +520,7 @@ padding:10px;
 /*===================== mapa seção ===================*/
 
 #mapa_section{
- 
   height: 70vh;
-  
 }
 .links-mapa  {
   display: flex;

@@ -10,7 +10,7 @@
     --dark-color: #000000;
     --light-color:  #FFFFFF;
     --back-color: #F7F8F9;
-    --blue-color: #9acff0;
+    --blue-color: #87c6ec;
     --orange-light-color:#071d3adc;
     --dark-blue: #1e2b32;
   }
@@ -130,7 +130,7 @@ header .logo {
 
 
 #banner_plano_section{
-    height: 60vh;
+    height: 90vh;
     margin-top: 60px;
     background-image: url(/img/banner-plano.png);
     background-repeat: no-repeat;
@@ -141,7 +141,8 @@ header .logo {
     height: 90vh;
     padding: 20px;
     background-color: var(--back-color);
-}
+    margin-top: -100px;
+  }
 
 
 /*line*/
@@ -156,7 +157,7 @@ header .logo {
 }
 
 .text-main-container{
-    padding: 60px 80px;
+    padding: 0px 80px;
     text-align: center;
     
 
@@ -327,8 +328,8 @@ header .logo {
     
 /*===================== seção info ===================*/
 #info_section{
-    padding: 60px 90px;
-    height: 40vh;
+    padding: 80px 90px;
+    height: 50vh;
     display: flex;
     flex-direction: row;
     gap: 50px;

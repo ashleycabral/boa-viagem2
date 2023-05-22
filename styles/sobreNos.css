@@ -10,7 +10,7 @@
     --dark-color: #000000;
     --light-color:  #FFFFFF;
     --back-color: #F7F8F9;
-    --blue-color: #9acff0;
+    --blue-color: #87c6ec;
     --orange-light-color:#071d3adc;
     --dark-blue: #1e2b32;
   }
@@ -132,7 +132,7 @@ header .logo {
 #img_historia_section{
      height: 40vh;
      position: relative;
-     background-image: linear-gradient(rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0.445)), url("/img/img-back-boaviagem.jpg");
+     background-image: linear-gradient(rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0.445)), url("/img/amarassist_como_organizar_um_funeral\ \(1\).jpeg");
      background-size: cover;
      background-attachment: fixed;
 }
@@ -141,7 +141,7 @@ header .logo {
 .text-img-hist{
     color: var(--light-color);
     font-size: 50px;
-    padding: 13% 5%;
+    padding: 12% 5%;
     text-transform: uppercase;
 }
 
@@ -155,8 +155,8 @@ header .logo {
 }
 
 #historia_section{
-    padding: 40px 50px;
-    height: 60vh;
+    padding: 40px 5px;
+    height: 70vh;
 }
 
 #historia_section h1{
@@ -167,12 +167,14 @@ header .logo {
 
 .text-historia{
     display: flex;
-    padding: 20px 200px;
+    padding: 20px 50px;
 }
 .text p{
-    font-size: 20px;
-    padding: 0 30px;
-    line-height: 40px;
+    font-size: 18px;
+    text-align: justify;
+    font-weight: 600;
+    padding: 0 40px;
+    line-height: 38px;
 }
 
 .img-carro-funebre img{
@@ -187,8 +189,9 @@ header .logo {
 #solucao_container{
 margin-top: 5%;
  background-color: var(--blue-color);
-height: 50vh;
+height: 60vh;
 }
+
 .card-container{
   display: flex;
   flex-direction: row ;
@@ -303,7 +306,7 @@ padding-right: 10px;
 /*===================== seção info ===================*/
 #info_section{
   padding: 60px 90px;
-  height: 40vh;
+  height: 50vh;
   display: flex;
   flex-direction: row;
   gap: 50px;
